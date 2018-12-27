@@ -21,7 +21,7 @@ defmodule Guardian.DB.Token do
     field(:jwt, :string)
     field(:claims, :map)
 
-    timestamps()
+    timestamps(inserted_at: :created_at)
   end
 
   @doc """
